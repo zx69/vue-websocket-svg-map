@@ -1,4 +1,5 @@
 # vue-webpack-svg-map
+公司采用的仓库大屏监控的简化组件，为基于vue的实时地图方案，使用svg构造地图布局，应用websocket实现实时刷新
 
 ## Project setup
 ```
