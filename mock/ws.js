@@ -6,16 +6,7 @@ const socket_url = process.env.VUE_APP_PROXY_ORIGIN_MAIN_HOST;
 const socket_prefix = process.env.VUE_APP_PROXY_ORIGIN_MAIN_WS_PREFIX;
 
 let currentIndex = 0;
-// let list = robot1Route.map((item) => {
-//   return {
-//     x: item[0],
-//     y: item[1],
-//     head: 'east',
-//     name: 'R01',
-//     withHolder: false,
-//     status: '1',
-//   };
-// });
+
 setInterval(() => {
   currentIndex++;
   if (currentIndex > robotData.length - 1) {

@@ -104,20 +104,9 @@
     <!-- 系统暂停时地图遮罩定义 -->
     <defs>
       <filter id="filterMaskWhite">
-        <!--<feColorMatrix-->
-        <!--type="matrix"-->
-        <!--values="1 0 0 0 0-->
-        <!--0 1 0 0 0-->
-        <!--0 0 1 0 0-->
-        <!--0 0 0 0.7 0 "/>-->
         <feColorMatrix in="SourceGraphic"
                        type="hueRotate"
                        values="100"/>
-        <!--<feColorMatrix in="SourceGraphic"-->
-        <!--type="luminanceToAlpha" />-->
-        <!--<feColorMatrix in="SourceGraphic"-->
-        <!--type="saturate"-->
-        <!--values="0.9" />-->
       </filter>
     </defs>
   </svg>

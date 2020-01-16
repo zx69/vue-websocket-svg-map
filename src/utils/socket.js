@@ -14,10 +14,8 @@ class SocketIO {
     this.onmessage = this.onmessage.bind(this);
     this.onerror = this.onerror.bind(this);
     this.onclose = this.onclose.bind(this);
-    // SocketIO.$router = $router;
   }
 
-  // static $router = null;
   static socket = null; // socket 对象
   static connented = false;
 
@@ -33,7 +31,6 @@ class SocketIO {
     SocketIO.socket.onmessage = this.onmessage;
     SocketIO.socket.onclose = this.onclose;
     SocketIO.socket.onerror = this.onerror;
-    // return SocketIO.socket;
   }
 
   onopen() {
@@ -51,15 +48,6 @@ class SocketIO {
       return false;
     }
     store.dispatch('setWebsocketData', data);
-    // switch (String(data.type)) {
-    //     case 'msg':
-    //         store.commit('ADD_NOTIFY', {
-    //             count: 1,
-    //             msgs: data.data
-    //         });
-    //         this.notice(data);
-    //         break;
-    // }
   }
 
   onerror() {

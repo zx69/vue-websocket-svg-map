@@ -2,7 +2,7 @@
 import request from '../utils/request';
 
 /* ******************************************** */
-// 获取分销列表
+// 获取地图布局列表
 export function getWarehouseLayout(params) {
   return request({
     url: '/warehouse/layout',
@@ -11,7 +11,7 @@ export function getWarehouseLayout(params) {
   });
 }
 
-
+// 获取地图概况
 export function getWarehouseDetail(params = { id: '1' }) {
   return request({
     url: '/warehouse/detail',

@@ -5,16 +5,13 @@ const service = axios.create({
   timeout: 60000,
 });
 
-// request interceptor
 service.interceptors.request.use(
   config => config,
   (error) => {
-    console.log(error); // for debug
     return Promise.reject(error);
   },
 );
 
-// response interceptor
 service.interceptors.response.use(
   (response) => {
     const res = response.data;

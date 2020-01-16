@@ -12,8 +12,6 @@ export default {
   components: {
     Monitor,
   },
-  created(){
-  }
 };
 </script>
 
