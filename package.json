@@ -9,7 +9,7 @@
     "lint-fix": "vue-cli-service lint --fix --ext .js,.vue"
   },
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "core-js": "^3.4.3",
     "mockjs": "^1.1.0",
     "vue": "^2.6.10",
